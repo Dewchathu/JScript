@@ -1,0 +1,49 @@
+body{
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle{
+    position: absolute;
+    background-color: #fff;
+    width: 400px;
+    height: 210px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px #aaaaaa;
+    top: 35%;
+}
+.topic{
+    background-color: blueviolet;
+    width: 100%;
+    position: relative;
+    border-radius: 15px 15px 0px  0px;
+    color: #fff;
+    margin: 0%;
+}
+#answer{
+    padding: 8px;
+    font-size: 20px;
+}
+input{
+    margin: 5px;
+}
+button{
+    margin: 10px;
+    background-color: green;
+    border: 0px;
+    padding: 5px;
+    border-radius: 2px;
+    color: #fff;
+}
+.clear{
+    background-color: red;
+}
