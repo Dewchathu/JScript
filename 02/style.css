@@ -1,0 +1,27 @@
+
+body{
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle{
+    width: 75%;
+    height: 40%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(222, 222, 225);
+}
+
+#answer {
+    font-size: 24px;
+}
