@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .dialog-box {
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header h1 {
+    margin: 0;
+    text-align: center;
+    color: lightseagreen;
+  }
+  
+  .password,
+  .re-password {
+    margin: 10px 0;
+  }
+  
+  .password label,
+  .re-password label {
+    display: inline-block;
+    margin-bottom: 5px;
+    text-align: right;
+  }
+  
+  
+  .toggle-password {
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  .toggle-password i {
+    position: relative;
+    top: 28px;
+    left: -25px;
+    transform: translateY(-50%);
+  }
+
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: 1px solid black;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input.valid {
+    border: 1px solid green;
+  }
+  
+  input.invalid {
+    border: 1px solid red;
+  }
+
+  input.weak {
+    border: 1px solid orange;
+  }
+
+  .error-message {
+    display: none;
+    font-size: 12px;
+    margin: 0 20px;
+  }
+  
+  input.invalid + .toggle-password + .error-message {
+    display: block;
+    color: red;
+  }
+  
+  input.valid + .toggle-password + .error-message {
+    display: block;
+    color: green;
+  }
+  input.weak + .toggle-password + .error-message {
+    display: block;
+    color: orange;
+  }
+  

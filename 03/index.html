@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Your Page Title</title>
+</head>
+<body>
+
+  <div class="dialog-box">
+    <div class="header">
+      <h1>Password Checker</h1>
+    </div>
+    <div class="password">
+      <label for="password">Password:</label>
+      <input type="password" id="password" class="password-input">
+      <span class="toggle-password" id="toggle-password" onclick="togglePasswordVisibility('password')">
+        <i class="fa fa-eye-slash"></i>
+      </span>
+    </div>
+    <div class="re-password">
+      <label for="re-password">Confirm Password:</label>
+      <input type="password" id="re-password" class="password-input">
+      <span class="toggle-password" id="toggle-password" onclick="togglePasswordVisibility('re-password')">
+        <i class="fa fa-eye-slash"></i>
+      </span>
+    </div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
