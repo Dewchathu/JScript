@@ -15,17 +15,26 @@
     </div>
     <div class="password">
       <label for="password">Password:</label>
-      <input type="password" id="password" class="password-input">
+      <input type="password" id="password" class="password-input" placeholder="Password">
       <span class="toggle-password" id="toggle-password" onclick="togglePasswordVisibility('password')">
         <i class="fa fa-eye-slash"></i>
       </span>
     </div>
     <div class="re-password">
       <label for="re-password">Confirm Password:</label>
-      <input type="password" id="re-password" class="password-input">
+      <input type="password" id="re-password" class="password-input" placeholder="Confirm Password">
       <span class="toggle-repassword" id="toggle-repassword" onclick="togglePasswordVisibility('re-password')">
         <i class="fa fa-eye-slash"></i>
       </span>
+    </div>
+    <div class="instructions">
+        <ul>
+            <li>Include at least one uppercase letter (A-Z) in your password.</li>
+            <li>Include at least two numbers (0-9) in your password.</li>
+            <li>Include at least two lowercase letters (a-z) in your password.</li>
+            <li>Include at least two special characters (!@#$%^&*(),.?":{}|<>).</li>
+            <li>Ensure your password is at least 8 characters long.</li>
+        </ul>
     </div>
   </div>
 
