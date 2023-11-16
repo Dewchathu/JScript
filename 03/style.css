@@ -47,6 +47,18 @@ body {
     transform: translateY(-50%);
   }
 
+  .toggle-repassword {
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  .toggle-repassword i {
+    position: relative;
+    top: 28px;
+    left: -25px;
+    transform: translateY(-50%);
+  }
+
   input {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -60,18 +72,30 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: 20px;
   }
   
-  input.valid {
+  input.strong {
     border: 1px solid green;
   }
   
-  input.invalid {
+  input.too-weak {
     border: 1px solid red;
   }
 
   input.weak {
     border: 1px solid orange;
+  }
+  input.good {
+    border: 1px solid brown;
+  }
+
+  input.valid {
+    border: 1px solid green;
+  }
+
+  input.invalid {
+    border: 1px solid red;
   }
 
   .error-message {
@@ -79,18 +103,41 @@ body {
     font-size: 12px;
     margin: 0 20px;
   }
+
+  .match-message {
+    display: none;
+    font-size: 12px;
+    margin: 0 20px;
+  }
   
-  input.invalid + .toggle-password + .error-message {
+  input.too-weak + .toggle-password + .error-message {
     display: block;
     color: red;
   }
   
-  input.valid + .toggle-password + .error-message {
+  input.strong + .toggle-password + .error-message {
     display: block;
     color: green;
   }
+
   input.weak + .toggle-password + .error-message {
     display: block;
     color: orange;
   }
+
+  input.good + .toggle-password + .error-message {
+    display: block;
+    color: brown;
+  }
+  input.invalid + .toggle-repassword + .match-message {
+    display: block;
+    color: red;
+  }
+  
+  input.valid + .toggle-repassword + .match-message {
+    display: block;
+    color: green;
+  }
+
+  
   
