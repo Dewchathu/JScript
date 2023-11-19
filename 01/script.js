@@ -1,8 +1,13 @@
 
+function cal() {
+  const num1Element = document.getElementById('num1');
+  const num2Element = document.getElementById('num2');
+  const answerElement = document.getElementById('answer');
 
-function cal(){
-    var N1 = document.getElementById("num1").value;
-    var N2 = document.getElementById("num2").value;
-    var ans = document.getElementById("answer");
-    ans.innerHTML = Number(N1)+Number(N2);
+  const num1 = parseInt(num1Element.value);
+  const num2 = parseInt(num2Element.value);
+
+  const answer = num1 + num2;
+
+  answerElement.innerHTML = answer;
 }
