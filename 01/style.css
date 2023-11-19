@@ -14,7 +14,7 @@ body{
 
 .rectangle{
     position: absolute;
-    background-color: #fff;
+    background-color: #ffff;
     width: 400px;
     height: 210px;
     border-radius: 15px;
