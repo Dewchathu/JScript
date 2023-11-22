@@ -30,7 +30,7 @@ You can find a live demo of the BMI Calculator at [Demo Link](https://simple-bmi
 
 2. Open the `index.html` file in your web browser.
 
-3. Click the "Generate Quote" button to see a new random quote.
+3. Click the "Calculate" button to see you BMI.
 
 ## Usage
 
