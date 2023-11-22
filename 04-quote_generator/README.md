@@ -18,6 +18,7 @@ This is a simple web application that generates random quotes using HTML, CSS, a
 
 ## Demo
 
+  You can find a live demo of the calculator at [Demo Link](https://generate-random-quotes.web.app).
 
 ## Installation
 
@@ -38,17 +39,17 @@ This is a simple web application that generates random quotes using HTML, CSS, a
 
 ## Technologies Used
 
-- HTML: Structure of the webpage.
-- CSS: Styling of the webpage.
-- JavaScript: Logic for fetching and displaying random quotes.
+- **HTML**: Structure of the webpage.
+- **CSS**: Styling of the webpage.
+- **JavaScript**: Logic for fetching and displaying random quotes.
 
 ## Contributing
 
 Contributions are welcome! If you have any improvements or bug fixes, please create a pull request. For major changes, please open an issue first to discuss the proposed changes.
 
-# If you'd like to contribute to this project, please follow these steps:
+If you'd like to contribute to this project, please follow these steps:
 
-Fork the project.
+- Fork the project.
 
 ```bash
 Create your feature branch: git checkout -b feature/new-feature
