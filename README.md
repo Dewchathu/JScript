@@ -29,6 +29,15 @@ Usage:
 2. Enter your desired password in the input field.
 3. As you type, the application will provide real-time feedback on the password strength.
 
+## 04 - Random Quote Generator
+
+Description: This is a simple web application that generates random quotes using HTML, CSS, and JavaScript. It fetches quotes from an external API and displays them on the webpage. Users can click a button to generate a new random quote.
+
+Usage:
+1. Open the `index.html` file in a web browser.
+2. Enter your desired password in the input field.
+3. As you type, the application will provide real-time feedback on the password strength.
+
 ## Contributing
 
 If you'd like to contribute to these projects, feel free to fork the repository and submit a pull request. Contributions are welcome!
