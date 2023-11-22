@@ -19,7 +19,7 @@ This application checks the strength of a password based on various criteria, in
 
 ## Demo
 
-You can find a live demo of the Validated Password Checker at [Demo Link](https://your-demo-link.com).
+You can find a live demo of the Validated Password Checker at [Demo Link](https://validated-password-checker.web.app/).
 
 ## Installation
 
