@@ -69,6 +69,25 @@ h1:hover {
     outline: none;  
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); 
 } 
+#searchButton {
+    display: block;
+    width: 40%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #00c458;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#searchButton:hover {
+    background-color: #009b45;
+    transform: scale(1.05);
+}
 
 .card { 
     max-width: 50%; 
