@@ -1,23 +1,46 @@
-function updateClock() {
-    const hourHand = document.querySelector('.hour-hand');
-    const minuteHand = document.querySelector('.minute-hand');
-    const secondHand = document.querySelector('.second-hand');
-    
-    const now = new Date();
-    
-    const seconds = now.getSeconds();
-    const secondsDegrees = ((seconds / 60) * 360) + 90;
-    secondHand.style.transform = `translateX(-50%) rotate(${secondsDegrees}deg)`;
-    
-    const minutes = now.getMinutes();
-    const minutesDegrees = ((minutes / 60) * 360) + ((seconds / 60) * 6) + 90;
-    minuteHand.style.transform = `translateX(-50%) rotate(${minutesDegrees}deg)`;
-    
-    const hours = now.getHours();
-    const hoursDegrees = ((hours / 12) * 360) + ((minutes / 60) * 30) + 90;
-    hourHand.style.transform = `translateX(-50%) rotate(${hoursDegrees}deg)`;
-  }
+document.addEventListener('DOMContentLoaded', () => {
+  const timezoneSelector = document.getElementById('timezone-selector');
   
+  fetch('timezones.json')
+    .then(response => response.json())
+    .then(timezones => {
+      // Sort the timezones alphabetically by label
+      timezones.sort((a, b) => a.label.localeCompare(b.label));
+
+      // Populate the dropdown
+      timezones.forEach(tz => {
+        const option = document.createElement('option');
+        option.value = tz.value;
+        option.textContent = tz.label;
+        timezoneSelector.appendChild(option);
+      });
+
+      updateClock(); // Initial call to set the clock hands correctly after loading timezones
+    })
+    .catch(error => console.error('Error loading time zones:', error));
+
+  timezoneSelector.addEventListener('change', updateClock);
+
   setInterval(updateClock, 1000);
-  updateClock(); // Initial call to set the clock hands correctly
+});
+
+function updateClock() {
+  const selectedTimezone = document.getElementById('timezone-selector').value;
+  const now = new Date(new Date().toLocaleString("en-US", {timeZone: selectedTimezone}));
+
+  const hourHand = document.querySelector('.hour-hand');
+  const minuteHand = document.querySelector('.minute-hand');
+  const secondHand = document.querySelector('.second-hand');
   
+  const seconds = now.getSeconds();
+  const minutes = now.getMinutes();
+  const hours = now.getHours();
+  
+  const secondsDegrees = ((seconds / 60) * 360);
+  const minutesDegrees = ((minutes / 60) * 360);
+  const hoursDegrees = ((hours / 12) * 360);
+
+  secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+  minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
+  hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
+}

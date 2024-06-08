@@ -3,15 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modern Analog Clock</title>
+  <title>Modern Analog Clock with Time Zone</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="clock">
-    <div class="hand hour-hand"></div>
-    <div class="hand minute-hand"></div>
-    <div class="hand second-hand"></div>
-    <div class="center-point"></div>
+  <div class="container">
+    <select id="timezone-selector">
+    </select>
+    <div class="clock">
+      <div class="hand hour-hand"></div>
+      <div class="hand minute-hand"></div>
+      <div class="hand second-hand"></div>
+      <div class="center-point"></div>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
