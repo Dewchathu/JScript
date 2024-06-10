@@ -1,5 +1,5 @@
 body { 
-	background-color: #09dbd450; 
+	background-color: #fff; 
 } 
 
 .outer { 
@@ -23,7 +23,6 @@ h2 {
 
 h1 { 
 	color: green; 
-	background-color: white; 
 	display: inline; 
 } 
 
@@ -41,6 +40,7 @@ p {
 	width: 366px; 
 	height: 222px; 
 	border-radius: 26px; 
+    box-shadow: inset;
 	text-align: center; 
 	display: none; 
 	transition: all 0.5s ease; 
@@ -79,5 +79,5 @@ button {
 button:hover { 
 	background-color: rgb(113, 140, 139); 
 	color: white; 
-	/* transition-delay: 0.4s; */
+	transition-delay: 0.4s;
 }
