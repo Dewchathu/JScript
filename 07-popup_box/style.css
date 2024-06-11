@@ -1,83 +1,62 @@
-body { 
-	background-color: #fff; 
-} 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-.outer { 
-	display: flex; 
-	justify-content: center; 
-	align-items: center; 
-	height: 400px; 
-} 
+.button-33 {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
 
-.heading { 
-	display: flex; 
-	align-items: center; 
-	height: 28px; 
-	justify-content: center; 
-} 
+.button-33:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+}
 
-h1, 
-h2 { 
-	text-align: center; 
-} 
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
 
-h1 { 
-	color: green; 
-	display: inline; 
-} 
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
 
-h2 { 
-	color: rgb(139, 52, 52); 
-} 
-
-p { 
-	text-align: center; 
-	font-weight: bold; 
-} 
-
-.popup { 
-	background-color: #fafafa; 
-	width: 366px; 
-	height: 222px; 
-	border-radius: 26px; 
-    box-shadow: inset;
-	text-align: center; 
-	display: none; 
-	transition: all 0.5s ease; 
-	transition-duration: 1s; 
-} 
-
-#showbtn { 
-	margin: 200px auto; 
-} 
-
-#closebtn { 
-	margin-top: 3px; 
-} 
-
-.popup button { 
-	margin-top: 6px; 
-} 
-
-button { 
-	background-color: rgb(0, 0, 0); 
-	color: white; 
-	border-radius: 5px; 
-	height: 36px; 
-	width: 77px; 
-	border: none; 
-	transition-duration: 0.5s; 
-	font-size: 17px; 
-} 
-
-.far.fa-check-circle { 
-	color: blue; 
-	font-size: 37px; 
-	margin-top: 7px; 
-} 
-
-button:hover { 
-	background-color: rgb(113, 140, 139); 
-	color: white; 
-	transition-delay: 0.4s;
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
 }

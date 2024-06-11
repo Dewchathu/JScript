@@ -1,25 +1,19 @@
-// To access the show button element 
-let showbtn = document.getElementById("showbtn"); 
+document.addEventListener('DOMContentLoaded', function() {
+    const popup = document.getElementById('popup');
+    const openBtn = document.getElementById('openBtn');
+    const closeBtn = document.getElementById('closeBtn');
 
-// To access the Close button element 
-let closebtn = document.getElementById("closebtn"); 
+    openBtn.addEventListener('click', function() {
+        popup.style.display = 'flex';
+    });
 
-// To acces the popup element 
-let popup = document.querySelector(".popup"); 
-let subp = document.getElementById("sub-p"); 
+    closeBtn.addEventListener('click', function() {
+        popup.style.display = 'none';
+    });
 
-// To show the popup on click 
-showbtn.addEventListener("click", () => { 
-	popup.style.display = "block"; 
-	showbtn.style.display = "none"; 
-	document.body.style.backgroundColor = "#9EA9B1"; 
-	subp.style.display = "none"; 
-}); 
-
-// To close the popup on click 
-closebtn.addEventListener("click", () => { 
-	popup.style.display = "none"; 
-	showbtn.style.display = "block"; 
-	document.body.style.backgroundColor = "#09dbd450"; 
-	subp.style.display = "block"; 
+    window.addEventListener('click', function(event) {
+        if (event.target === popup) {
+            popup.style.display = 'none';
+        }
+    });
 });

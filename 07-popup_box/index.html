@@ -1,35 +1,22 @@
-<!DOCTYPE html> 
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Pop-Up Message</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <h2>Pop-Up Message</h2>
+            <p>This is a pop-up message using HTML, CSS, and JavaScript.</p>
+        </div>
+    </div>
 
-<head> 
-	<meta charset="UTF-8" /> 
-	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0" /> 
-	<link rel="stylesheet"
-		href= 
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> 
-	<link rel="stylesheet" href="style.css" /> 
-	<title>Pop message</title> 
-</head> 
+    <button id="openBtn" class="button-33">Pop up Message</button>
 
-<body> 
-	<div class="heading"> 
-		<h1>Pop Up</h1> 
-	</div>
-	<p id="sub-p"> 
-		Click below button for Popup 
-	</p> 
-	<div class="outer"> 
-		<div class="popup"> 
-			<i class="far fa-check-circle"></i> 
-			<h2>You have Subscribed</h2> 
-			<br /> 
-			<button id="closebtn">Close</button> 
-		</div> 
-		<button id="showbtn">Popup</button> 
-	</div> 
-	<br /> 
-	<script src="script.js"></script> 
-</body> 
-
+    <script src="script.js"></script>
+</body>
 </html>
