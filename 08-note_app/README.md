@@ -19,7 +19,7 @@ This project is a simple note app.
 
 ## Demo
 
-  You can find a live demo of the clock at [Demo Link](https://analog-clock-with-time-zone.web.app/).
+  You can find a live demo of the clock at [Demo Link](https://).
 
 ## Installation
 
