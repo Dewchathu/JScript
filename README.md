@@ -1,4 +1,4 @@
-# JavaScript Applications
+# JavaScript Applications...
 
 This repository contains a collection of simple JavaScript applications.
 
