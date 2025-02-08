@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator with Custom Logo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        
+        <input type="text" id="qrText" placeholder="Enter text or URL">
+        <p class="text">If you want to add a logo upload your logo here</p>
+        <input type="file" id="logoInput" accept="image/*">
+        <button onclick="generateQRCode()">Generate QR</button>
+        
+        <div id="qrCodeContainer"></div>
+        <button id="downloadButton" style="display: none;" onclick="downloadQRCode()">Download QR Code</button>
+    </div>
+    <footer>
+        <p>Copyrights &copy; 2025 QR Generator with Custom Logo | Developer <a href="https://www.linkedin.com/in/chathura-devinda-73ab25229/">Chathura Devinda</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
